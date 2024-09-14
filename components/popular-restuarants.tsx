@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -8,21 +9,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "./ui/button";
-import { ChevronDownCircle } from "lucide-react";
-const NearbyRestuarantCarousel = () => {
+
+const PopularRestaurants = () => {
   return (
     <section  className="w-full flex flex-col gap-4">
       <div className="flex justify-between items-center">
-        <h1>Up to -40% Discount Offers 🎊</h1>
-        <Button className="rounded-full gap-x-1" variant="outline">
-          <ChevronDownCircle
-            width={18}
-            height={18}
-            className="scale-105 fill-blue-dark [&>path]:stroke-white "
-          />
-
-          <span>Pizza &amp; Fast Food</span>
-        </Button>
+        <h1 className="font-bold pl-2">Popular Restaurants</h1>
+   
       </div>
       <Carousel
         opts={{
@@ -50,4 +43,4 @@ const NearbyRestuarantCarousel = () => {
   );
 };
 
-export default NearbyRestuarantCarousel;
+export default PopularRestaurants;

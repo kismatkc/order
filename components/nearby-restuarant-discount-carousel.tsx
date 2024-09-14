@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -13,7 +14,7 @@ const NearbyRestuarantCarousel = () => {
   return (
     <section  className="w-full flex flex-col gap-4">
       <div className="flex justify-between items-center">
-        <h1>Up to -40% Discount Offers 🎊</h1>
+        <h1 className="font-bold pl-2">Up to -40% Discount 🎊</h1>
         <Button className="rounded-full gap-x-1" variant="outline">
           <ChevronDownCircle
             width={18}

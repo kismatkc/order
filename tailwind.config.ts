@@ -53,6 +53,10 @@ const config: Config = {
         blue: {
           dark: "#03081F",
         },
+        grey: {
+          1: "#E2E2E2",
+        }
+        
       },
       borderRadius: {
         lg: "var(--radius)",

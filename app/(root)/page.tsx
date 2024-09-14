@@ -1,6 +1,9 @@
 import LocationEllipsis from "@/components/location-ellipsis";
 import NearByFoodSeach from "@/components/nearby-food-search";
-import NearbyRestuarantCarousel from "@/components/nearby-restuarant-carousel";
+import NearbyRestuarantCarousel from "@/components/nearby-restuarant-discount-carousel";
+import PopularCategories from "@/components/popular-categories";
+import PopularRestaurants from "@/components/popular-restuarants";
+import DownloadOrderBanner from "@/components/download-order-banner";
 import { ShoppingBasketIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,7 +35,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" flex">
+        <div className="flex">
           <div className="flex items-center p-4 justify-center w-1/2  border-[#000000] border border-l-0">
             <figure className="flex gap-x-2  items-center justify-center">
               <Image
@@ -68,9 +71,12 @@ export default function Home() {
         </div>
         <LocationEllipsis location="The iPhone 16 Pro is indeed priced lower than the iPhone 15 Pro in India, which might seem surprising since the iPhone 16 is the newer model. Here’s why" />
       </header>
-      <main>
+      <main className="flex flex-col gap-[40px]">
         <NearByFoodSeach />
         <NearbyRestuarantCarousel />
+        <PopularCategories />
+        <PopularRestaurants />
+        <DownloadOrderBanner />
       </main>
       <footer></footer>
     </>
